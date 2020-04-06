@@ -1,0 +1,283 @@
+/* IMPORTANT: THIS IS YOUR HOME PAGE, NOT YOUR STYhE PAGE SEND URR DESIGN HERE
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* Main Content Images
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+    background: var(--main-bg-color);
+    text-align: center;
+    margin-top:3em;
+}
+
+img {
+    border: 0;
+    height: auto;
+    width: 100%;
+}
+.t-cre {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+.m-riv {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+.r-jes {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+.b-sat {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+.p-crt {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+.f-gbs {
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 200px;
+    padding: 0;
+    margin-top: 3em;
+    border: 3px solid var(--foreground-color);
+}
+
+
+/* Css for comic preview
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.image-result{
+    position:relative;
+    min-width: 5em;
+    max-height: 85em;
+}
+  
+  .img-preview{
+    display:inline-block;
+    border-color: black;
+    border-style: dashed;
+    border-width: 1em;
+    max-height: 85em;
+    object-fit: contain;
+
+  }
+  
+  .preview-section{
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #ffb6c1;
+    border: 5px solid black;
+    margin:20%;
+    margin-top:2em;
+    position: relative;
+  }
+  
+  .preview-area{
+    display:none;
+    position: fixed;
+    text-align:center;
+    width:100%;
+    height: 100%;
+    background-color:rgba(128, 128, 128, 0.726);
+    top:0em;
+    margin: none;
+    padding-top:2em;
+    top:0em;
+    filter: blur(0px);
+  }
+  
+  .close-tab{
+    background:none;
+    border:none;
+    width:7em;
+    text-align: center;
+    left:46%;
+    right:46%;
+    margin-top:3em;
+    padding-bottom: 0em;
+    border-style: dotted;
+    border-width: 0.2em;
+    border-radius: 100%;
+    border-color: #ffb6c1;
+  }
+
+  .close-tab:hover{
+    background-color: black;
+    transition-duration: .4s;
+  }
+  
+  .next-button{
+    background-color:none;
+  }
+  
+  .next-button:hover{
+    border-style: none;
+    background-color:black;
+    transition-duration: .4s;
+  }
+  
+  .previous-button{
+    background-color:none;
+  }
+
+  .previous-button:hover{
+    border-style: none;
+    background-color:black;
+    transition-duration: .4s;
+  }
+
+  .preview-comic{
+      border:none;
+      background:none;
+  }
+
+
+
+
+  .cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 99;
+  }
+
+
+  
+/* This is for scrollspy 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.return-up{
+  background-color:rgba(128, 128, 128, 0.726);
+  width: 100%;
+  height:10em;
+  top:-10em;
+  position: fixed;
+}
+
+.back-to-top{
+  background-color: rgba(128, 128, 128, 0);
+  border: none;
+  height: 10em;
+  width:100%;
+}
+
+.back-to-top:hover{
+  background-color: rgba(43, 43, 43, 0.671);
+
+}
+
+.up-arrow{
+  width:10em;
+  background-color: none;
+}
+
+.button-fix{
+  z-index:3;
+  width:100%;
+  height: 10em;
+  position:fixed;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Typography 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* Anton (H2) is used for Titles, Quicksand is used for the navigation/default text, Museo Sans (Authors), Rift Soft is only used for aesthetic reasons
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.title {
+    margin-left: 10px;
+    margin-top: 2.5px;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 2em;
+}
+.pstyle {
+    padding: 1.5em;
+    color: black;
+    font-size: 1.3em;
+}
+.author {
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: var(--foreground-color);
+    letter-spacing: 1.12px;
+    font-size: 1.4em;
+    margin-top: -15px;
+}
+.font-style {
+
+font-family: rift-soft, sans-serif Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+margin-top: 1em;
+}
+.grid-lol {
+    padding: 20px;
+    margin-top:4em;
+  }
+
+
+@media screen and (min-width:768px) {
+    .grid-lol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+        margin-top:4em;
+
+    }
+    
+
+    @media screen and (min-width:1350px) {
+        .grid-lol {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1em;
+            margin-top:4em;
+
+        }
+
+        .illust {
+        display:block;
+        opacity: 0%;
+        }
+    
+        @media screen and (min-width:1400px) {
+            
+        .illust {
+            opacity: 100%;
+            transition-duration: 10s;
+            margin-top:4em;
+            }
+
+        }
